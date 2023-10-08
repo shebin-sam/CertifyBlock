@@ -1,0 +1,106 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_date",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_organizer",
+				"type": "string"
+			}
+		],
+		"name": "generatecert",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_date",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_organizer",
+				"type": "string"
+			}
+		],
+		"name": "hash",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "certhash",
+				"type": "bytes32"
+			}
+		],
+		"name": "searchcert",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "date",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "organizer",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "certhash",
+						"type": "bytes32"
+					}
+				],
+				"internalType": "struct Certificate.certificate",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
